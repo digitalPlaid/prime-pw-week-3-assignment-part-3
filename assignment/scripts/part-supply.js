@@ -46,7 +46,7 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
 console.log('6. Showing supplyChanges...');
-for (supply of supplyChanges) {
+for (let supply of supplyChanges) {
     if (supply > 0) {
         console.log(`Added ${supply}`);
     } else if (supply === 0) {
@@ -76,7 +76,7 @@ while (idx < supplyChanges.length) {
 console.log('9. Total supplies available is:');
 
     let sum = 0;
-    for (supply of supplyChanges) {
+    for (let supply of supplyChanges) {
         sum += supply;
     }
 console.log(sum);
